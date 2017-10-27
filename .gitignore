@@ -1,0 +1,4 @@
+DataFilter
+SparkStreamingKafka
+*.class
+*.jar
