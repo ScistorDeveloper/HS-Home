@@ -1,0 +1,848 @@
+INFO main org.apache.spark.SparkContext - Running Spark version 1.6.2
+ WARN main org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+ INFO main org.apache.spark.SecurityManager - Changing view acls to: Administrator
+ INFO main org.apache.spark.SecurityManager - Changing modify acls to: Administrator
+ INFO main org.apache.spark.SecurityManager - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(Administrator); users with modify permissions: Set(Administrator)
+ INFO main org.apache.spark.util.Utils - Successfully started service 'sparkDriver' on port 57084.
+ INFO sparkDriverActorSystem-akka.actor.default-dispatcher-4 akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+ INFO sparkDriverActorSystem-akka.actor.default-dispatcher-4 Remoting - Starting remoting
+ INFO sparkDriverActorSystem-akka.actor.default-dispatcher-4 Remoting - Remoting started; listening on addresses :[akka.tcp://sparkDriverActorSystem@172.16.1.153:57099]
+ INFO main org.apache.spark.util.Utils - Successfully started service 'sparkDriverActorSystem' on port 57099.
+ INFO main org.apache.spark.SparkEnv - Registering MapOutputTracker
+ INFO main org.apache.spark.SparkEnv - Registering BlockManagerMaster
+ INFO main org.apache.spark.storage.DiskBlockManager - Created local directory at C:\Users\Administrator\AppData\Local\Temp\blockmgr-b392972c-e1c2-4e29-b5a0-579bc4aa39b1
+ INFO main org.apache.spark.storage.MemoryStore - MemoryStore started with capacity 415.1 MB
+ INFO main org.apache.spark.SparkEnv - Registering OutputCommitCoordinator
+ INFO main org.spark-project.jetty.server.Server - jetty-8.y.z-SNAPSHOT
+ INFO main org.spark-project.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:4040
+ INFO main org.apache.spark.util.Utils - Successfully started service 'SparkUI' on port 4040.
+ INFO main org.apache.spark.ui.SparkUI - Started SparkUI at http://172.16.1.153:4040
+ ERROR main org.apache.spark.SparkContext - Error initializing SparkContext.
+ org.apache.spark.SparkException: Could not parse Master URL: 'localhost[1]'
+	at org.apache.spark.SparkContext$.org$apache$spark$SparkContext$$createTaskScheduler(SparkContext.scala:2735)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:522)
+	at RedisT$.main(RedisT.scala:9)
+	at RedisT.main(RedisT.scala)
+INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage/kill,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/api,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/static,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/threadDump/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/threadDump,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/environment/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/environment,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/rdd/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/rdd,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/pool/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/pool,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/job/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/job,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs,null}
+ INFO main org.apache.spark.ui.SparkUI - Stopped Spark web UI at http://172.16.1.153:4040
+ INFO dispatcher-event-loop-0 org.apache.spark.MapOutputTrackerMasterEndpoint - MapOutputTrackerMasterEndpoint stopped!
+ INFO main org.apache.spark.storage.MemoryStore - MemoryStore cleared
+ INFO main org.apache.spark.storage.BlockManager - BlockManager stopped
+ INFO main org.apache.spark.storage.BlockManagerMaster - BlockManagerMaster stopped
+ WARN main org.apache.spark.metrics.MetricsSystem - Stopping a MetricsSystem that is not running
+ INFO dispatcher-event-loop-1 org.apache.spark.scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint - OutputCommitCoordinator stopped!
+ INFO main org.apache.spark.SparkContext - Successfully stopped SparkContext
+ INFO Thread-3 org.apache.spark.util.ShutdownHookManager - Shutdown hook called
+ INFO sparkDriverActorSystem-akka.actor.default-dispatcher-2 akka.remote.RemoteActorRefProvider$RemotingTerminator - Shutting down remote daemon.
+ INFO Thread-3 org.apache.spark.util.ShutdownHookManager - Deleting directory C:\Users\Administrator\AppData\Local\Temp\spark-cad9a73e-9b5d-4a99-ab9b-d50b8172392b
+ INFO main org.apache.spark.SparkContext - Running Spark version 1.6.2
+ WARN main org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+ INFO main org.apache.spark.SecurityManager - Changing view acls to: Administrator
+ INFO main org.apache.spark.SecurityManager - Changing modify acls to: Administrator
+ INFO main org.apache.spark.SecurityManager - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(Administrator); users with modify permissions: Set(Administrator)
+ INFO main org.apache.spark.util.Utils - Successfully started service 'sparkDriver' on port 57164.
+ INFO sparkDriverActorSystem-akka.actor.default-dispatcher-3 akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+ INFO sparkDriverActorSystem-akka.actor.default-dispatcher-3 Remoting - Starting remoting
+ INFO sparkDriverActorSystem-akka.actor.default-dispatcher-3 Remoting - Remoting started; listening on addresses :[akka.tcp://sparkDriverActorSystem@172.16.1.153:57177]
+ INFO main org.apache.spark.util.Utils - Successfully started service 'sparkDriverActorSystem' on port 57177.
+ INFO main org.apache.spark.SparkEnv - Registering MapOutputTracker
+ INFO main org.apache.spark.SparkEnv - Registering BlockManagerMaster
+ INFO main org.apache.spark.storage.DiskBlockManager - Created local directory at C:\Users\Administrator\AppData\Local\Temp\blockmgr-366d85c7-b951-4e32-a35d-6278d05d3292
+ INFO main org.apache.spark.storage.MemoryStore - MemoryStore started with capacity 415.1 MB
+ INFO main org.apache.spark.SparkEnv - Registering OutputCommitCoordinator
+ INFO main org.spark-project.jetty.server.Server - jetty-8.y.z-SNAPSHOT
+ INFO main org.spark-project.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:4040
+ INFO main org.apache.spark.util.Utils - Successfully started service 'SparkUI' on port 4040.
+ INFO main org.apache.spark.ui.SparkUI - Started SparkUI at http://172.16.1.153:4040
+ INFO main org.apache.spark.executor.Executor - Starting executor ID driver on host localhost
+ INFO main org.apache.spark.util.Utils - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 57184.
+ INFO main org.apache.spark.network.netty.NettyBlockTransferService - Server created on 57184
+ INFO main org.apache.spark.storage.BlockManagerMaster - Trying to register BlockManager
+ INFO dispatcher-event-loop-2 org.apache.spark.storage.BlockManagerMasterEndpoint - Registering block manager localhost:57184 with 415.1 MB RAM, BlockManagerId(driver, localhost, 57184)
+ INFO main org.apache.spark.storage.BlockManagerMaster - Registered BlockManager
+ INFO main org.apache.spark.SparkContext - Starting job: reduce at RedisT.scala:16
+ INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Got job 0 (reduce at RedisT.scala:16) with 2 output partitions
+ INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Final stage: ResultStage 0 (reduce at RedisT.scala:16)
+ INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List()
+ INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Missing parents: List()
+ INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Submitting ResultStage 0 (MapPartitionsRDD[1] at map at RedisT.scala:12), which has no missing parents
+ INFO dag-scheduler-event-loop org.apache.spark.storage.MemoryStore - Block broadcast_0 stored as values in memory (estimated size 1848.0 B, free 1848.0 B)
+ INFO dag-scheduler-event-loop org.apache.spark.storage.MemoryStore - Block broadcast_0_piece0 stored as bytes in memory (estimated size 1207.0 B, free 3.0 KB)
+ INFO dispatcher-event-loop-0 org.apache.spark.storage.BlockManagerInfo - Added broadcast_0_piece0 in memory on localhost:57184 (size: 1207.0 B, free: 415.1 MB)
+ INFO dag-scheduler-event-loop org.apache.spark.SparkContext - Created broadcast 0 from broadcast at DAGScheduler.scala:1006
+ INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Submitting 2 missing tasks from ResultStage 0 (MapPartitionsRDD[1] at map at RedisT.scala:12)
+ INFO dag-scheduler-event-loop org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 0.0 with 2 tasks
+ INFO dispatcher-event-loop-1 org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 0.0 (TID 0, localhost, partition 0,PROCESS_LOCAL, 2078 bytes)
+ INFO Executor task launch worker-0 org.apache.spark.executor.Executor - Running task 0.0 in stage 0.0 (TID 0)
+ INFO Executor task launch worker-0 org.apache.spark.executor.Executor - Finished task 0.0 in stage 0.0 (TID 0). 1031 bytes result sent to driver
+ INFO dispatcher-event-loop-3 org.apache.spark.scheduler.TaskSetManager - Starting task 1.0 in stage 0.0 (TID 1, localhost, partition 1,PROCESS_LOCAL, 2078 bytes)
+ INFO Executor task launch worker-0 org.apache.spark.executor.Executor - Running task 1.0 in stage 0.0 (TID 1)
+ INFO task-result-getter-0 org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 0.0 (TID 0) in 399 ms on localhost (1/2)
+ INFO Executor task launch worker-0 org.apache.spark.executor.Executor - Finished task 1.0 in stage 0.0 (TID 1). 1031 bytes result sent to driver
+ INFO task-result-getter-1 org.apache.spark.scheduler.TaskSetManager - Finished task 1.0 in stage 0.0 (TID 1) in 27 ms on localhost (2/2)
+ INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - ResultStage 0 (reduce at RedisT.scala:16) finished in 0.506 s
+ INFO task-result-getter-1 org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+ INFO main org.apache.spark.scheduler.DAGScheduler - Job 0 finished: reduce at RedisT.scala:16, took 6.760141 s
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/metrics/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage/kill,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/api,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/static,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/threadDump/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/threadDump,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/environment/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/environment,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/rdd/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/rdd,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/pool/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/pool,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/job/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/job,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs,null}
+ INFO main org.apache.spark.ui.SparkUI - Stopped Spark web UI at http://172.16.1.153:4040
+ INFO dispatcher-event-loop-0 org.apache.spark.MapOutputTrackerMasterEndpoint - MapOutputTrackerMasterEndpoint stopped!
+ INFO main org.apache.spark.storage.MemoryStore - MemoryStore cleared
+ INFO main org.apache.spark.storage.BlockManager - BlockManager stopped
+ INFO main org.apache.spark.storage.BlockManagerMaster - BlockManagerMaster stopped
+ INFO dispatcher-event-loop-1 org.apache.spark.scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint - OutputCommitCoordinator stopped!
+ INFO sparkDriverActorSystem-akka.actor.default-dispatcher-2 akka.remote.RemoteActorRefProvider$RemotingTerminator - Shutting down remote daemon.
+ INFO sparkDriverActorSystem-akka.actor.default-dispatcher-2 akka.remote.RemoteActorRefProvider$RemotingTerminator - Remote daemon shut down; proceeding with flushing remote transports.
+ INFO main org.apache.spark.SparkContext - Successfully stopped SparkContext
+ INFO Thread-3 org.apache.spark.util.ShutdownHookManager - Shutdown hook called
+ INFO Thread-3 org.apache.spark.util.ShutdownHookManager - Deleting directory C:\Users\Administrator\AppData\Local\Temp\spark-249ca4f8-9bf7-42f0-a966-e90abfc522a7
+ INFO main org.apache.spark.SparkContext - Running Spark version 1.6.2
+ WARN main org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+ INFO main org.apache.spark.SecurityManager - Changing view acls to: Administrator
+ INFO main org.apache.spark.SecurityManager - Changing modify acls to: Administrator
+ INFO main org.apache.spark.SecurityManager - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(Administrator); users with modify permissions: Set(Administrator)
+ INFO main org.apache.spark.util.Utils - Successfully started service 'sparkDriver' on port 57323.
+ INFO sparkDriverActorSystem-akka.actor.default-dispatcher-4 akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+ INFO sparkDriverActorSystem-akka.actor.default-dispatcher-4 Remoting - Starting remoting
+ INFO sparkDriverActorSystem-akka.actor.default-dispatcher-4 Remoting - Remoting started; listening on addresses :[akka.tcp://sparkDriverActorSystem@172.16.1.153:57338]
+ INFO main org.apache.spark.util.Utils - Successfully started service 'sparkDriverActorSystem' on port 57338.
+ INFO main org.apache.spark.SparkEnv - Registering MapOutputTracker
+ INFO main org.apache.spark.SparkEnv - Registering BlockManagerMaster
+ INFO main org.apache.spark.storage.DiskBlockManager - Created local directory at C:\Users\Administrator\AppData\Local\Temp\blockmgr-362310a9-5454-40ad-b924-818b4e341d82
+ INFO main org.apache.spark.storage.MemoryStore - MemoryStore started with capacity 415.1 MB
+ INFO main org.apache.spark.SparkEnv - Registering OutputCommitCoordinator
+ INFO main org.spark-project.jetty.server.Server - jetty-8.y.z-SNAPSHOT
+ INFO main org.spark-project.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:4040
+ INFO main org.apache.spark.util.Utils - Successfully started service 'SparkUI' on port 4040.
+ INFO main org.apache.spark.ui.SparkUI - Started SparkUI at http://172.16.1.153:4040
+ INFO main org.apache.spark.executor.Executor - Starting executor ID driver on host localhost
+ INFO main org.apache.spark.util.Utils - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 57345.
+ INFO main org.apache.spark.network.netty.NettyBlockTransferService - Server created on 57345
+ INFO main org.apache.spark.storage.BlockManagerMaster - Trying to register BlockManager
+ INFO dispatcher-event-loop-2 org.apache.spark.storage.BlockManagerMasterEndpoint - Registering block manager localhost:57345 with 415.1 MB RAM, BlockManagerId(driver, localhost, 57345)
+ INFO main org.apache.spark.storage.BlockManagerMaster - Registered BlockManager
+ INFO main org.apache.spark.SparkContext - Starting job: reduce at RedisT.scala:17
+ INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Got job 0 (reduce at RedisT.scala:17) with 2 output partitions
+ INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Final stage: ResultStage 0 (reduce at RedisT.scala:17)
+ INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List()
+ INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Missing parents: List()
+ INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Submitting ResultStage 0 (MapPartitionsRDD[1] at map at RedisT.scala:13), which has no missing parents
+ INFO dag-scheduler-event-loop org.apache.spark.storage.MemoryStore - Block broadcast_0 stored as values in memory (estimated size 1848.0 B, free 1848.0 B)
+ INFO dag-scheduler-event-loop org.apache.spark.storage.MemoryStore - Block broadcast_0_piece0 stored as bytes in memory (estimated size 1207.0 B, free 3.0 KB)
+ INFO dispatcher-event-loop-0 org.apache.spark.storage.BlockManagerInfo - Added broadcast_0_piece0 in memory on localhost:57345 (size: 1207.0 B, free: 415.1 MB)
+ INFO dag-scheduler-event-loop org.apache.spark.SparkContext - Created broadcast 0 from broadcast at DAGScheduler.scala:1006
+ INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Submitting 2 missing tasks from ResultStage 0 (MapPartitionsRDD[1] at map at RedisT.scala:13)
+ INFO dag-scheduler-event-loop org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 0.0 with 2 tasks
+ INFO dispatcher-event-loop-1 org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 0.0 (TID 0, localhost, partition 0,PROCESS_LOCAL, 2078 bytes)
+ INFO Executor task launch worker-0 org.apache.spark.executor.Executor - Running task 0.0 in stage 0.0 (TID 0)
+ INFO Executor task launch worker-0 org.apache.spark.executor.Executor - Finished task 0.0 in stage 0.0 (TID 0). 1031 bytes result sent to driver
+ INFO dispatcher-event-loop-3 org.apache.spark.scheduler.TaskSetManager - Starting task 1.0 in stage 0.0 (TID 1, localhost, partition 1,PROCESS_LOCAL, 2078 bytes)
+ INFO Executor task launch worker-0 org.apache.spark.executor.Executor - Running task 1.0 in stage 0.0 (TID 1)
+ INFO task-result-getter-0 org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 0.0 (TID 0) in 156 ms on localhost (1/2)
+ INFO Executor task launch worker-0 org.apache.spark.executor.Executor - Finished task 1.0 in stage 0.0 (TID 1). 1031 bytes result sent to driver
+ INFO task-result-getter-1 org.apache.spark.scheduler.TaskSetManager - Finished task 1.0 in stage 0.0 (TID 1) in 50 ms on localhost (2/2)
+ INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - ResultStage 0 (reduce at RedisT.scala:17) finished in 0.220 s
+ INFO task-result-getter-1 org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+ INFO main org.apache.spark.scheduler.DAGScheduler - Job 0 finished: reduce at RedisT.scala:17, took 0.926746 s
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/metrics/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage/kill,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/api,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/static,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/threadDump/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/threadDump,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/environment/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/environment,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/rdd/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/rdd,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/pool/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/pool,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/job/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/job,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs,null}
+ INFO main org.apache.spark.ui.SparkUI - Stopped Spark web UI at http://172.16.1.153:4040
+ INFO dispatcher-event-loop-0 org.apache.spark.MapOutputTrackerMasterEndpoint - MapOutputTrackerMasterEndpoint stopped!
+ INFO main org.apache.spark.storage.MemoryStore - MemoryStore cleared
+ INFO main org.apache.spark.storage.BlockManager - BlockManager stopped
+ INFO main org.apache.spark.storage.BlockManagerMaster - BlockManagerMaster stopped
+ INFO dispatcher-event-loop-0 org.apache.spark.scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint - OutputCommitCoordinator stopped!
+ INFO main org.apache.spark.SparkContext - Successfully stopped SparkContext
+ INFO Thread-3 org.apache.spark.util.ShutdownHookManager - Shutdown hook called
+ INFO Thread-3 org.apache.spark.util.ShutdownHookManager - Deleting directory C:\Users\Administrator\AppData\Local\Temp\spark-40f54b44-5f3b-420a-8962-2afddc0cf8c3
+ INFO sparkDriverActorSystem-akka.actor.default-dispatcher-4 akka.remote.RemoteActorRefProvider$RemotingTerminator - Shutting down remote daemon.
+ INFO main org.apache.spark.SparkContext - Running Spark version 1.6.2
+ WARN main org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+ INFO main org.apache.spark.SecurityManager - Changing view acls to: Administrator
+ INFO main org.apache.spark.SecurityManager - Changing modify acls to: Administrator
+ INFO main org.apache.spark.SecurityManager - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(Administrator); users with modify permissions: Set(Administrator)
+ INFO main org.apache.spark.util.Utils - Successfully started service 'sparkDriver' on port 58243.
+ INFO sparkDriverActorSystem-akka.actor.default-dispatcher-3 akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+ INFO sparkDriverActorSystem-akka.actor.default-dispatcher-3 Remoting - Starting remoting
+ INFO sparkDriverActorSystem-akka.actor.default-dispatcher-3 Remoting - Remoting started; listening on addresses :[akka.tcp://sparkDriverActorSystem@172.16.1.153:58257]
+ INFO main org.apache.spark.util.Utils - Successfully started service 'sparkDriverActorSystem' on port 58257.
+ INFO main org.apache.spark.SparkEnv - Registering MapOutputTracker
+ INFO main org.apache.spark.SparkEnv - Registering BlockManagerMaster
+ INFO main org.apache.spark.storage.DiskBlockManager - Created local directory at C:\Users\Administrator\AppData\Local\Temp\blockmgr-4240cd9b-3488-4dc9-b63f-c70f410a5c16
+ INFO main org.apache.spark.storage.MemoryStore - MemoryStore started with capacity 415.1 MB
+ INFO main org.apache.spark.SparkEnv - Registering OutputCommitCoordinator
+ INFO main org.spark-project.jetty.server.Server - jetty-8.y.z-SNAPSHOT
+ INFO main org.spark-project.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:4040
+ INFO main org.apache.spark.util.Utils - Successfully started service 'SparkUI' on port 4040.
+ INFO main org.apache.spark.ui.SparkUI - Started SparkUI at http://172.16.1.153:4040
+ INFO main org.apache.spark.executor.Executor - Starting executor ID driver on host localhost
+ INFO main org.apache.spark.util.Utils - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 58265.
+ INFO main org.apache.spark.network.netty.NettyBlockTransferService - Server created on 58265
+ INFO main org.apache.spark.storage.BlockManagerMaster - Trying to register BlockManager
+ INFO dispatcher-event-loop-2 org.apache.spark.storage.BlockManagerMasterEndpoint - Registering block manager localhost:58265 with 415.1 MB RAM, BlockManagerId(driver, localhost, 58265)
+ INFO main org.apache.spark.storage.BlockManagerMaster - Registered BlockManager
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/metrics/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage/kill,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/api,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/static,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/threadDump/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/threadDump,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/environment/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/environment,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/rdd/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/rdd,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/pool/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/pool,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/job/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/job,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs,null}
+ INFO main org.apache.spark.ui.SparkUI - Stopped Spark web UI at http://172.16.1.153:4040
+ INFO dispatcher-event-loop-2 org.apache.spark.MapOutputTrackerMasterEndpoint - MapOutputTrackerMasterEndpoint stopped!
+ INFO main org.apache.spark.storage.MemoryStore - MemoryStore cleared
+ INFO main org.apache.spark.storage.BlockManager - BlockManager stopped
+ INFO main org.apache.spark.storage.BlockManagerMaster - BlockManagerMaster stopped
+ INFO dispatcher-event-loop-3 org.apache.spark.scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint - OutputCommitCoordinator stopped!
+ INFO main org.apache.spark.SparkContext - Successfully stopped SparkContext
+ INFO Thread-3 org.apache.spark.util.ShutdownHookManager - Shutdown hook called
+ INFO Thread-3 org.apache.spark.util.ShutdownHookManager - Deleting directory C:\Users\Administrator\AppData\Local\Temp\spark-fab0ce58-0cb7-4bc2-865b-08005592cc4b
+ INFO sparkDriverActorSystem-akka.actor.default-dispatcher-4 akka.remote.RemoteActorRefProvider$RemotingTerminator - Shutting down remote daemon.
+ INFO main org.apache.spark.SparkContext - Running Spark version 1.6.2
+ WARN main org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+ INFO main org.apache.spark.SecurityManager - Changing view acls to: Administrator
+ INFO main org.apache.spark.SecurityManager - Changing modify acls to: Administrator
+ INFO main org.apache.spark.SecurityManager - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(Administrator); users with modify permissions: Set(Administrator)
+ INFO main org.apache.spark.util.Utils - Successfully started service 'sparkDriver' on port 58356.
+ INFO sparkDriverActorSystem-akka.actor.default-dispatcher-3 akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+ INFO sparkDriverActorSystem-akka.actor.default-dispatcher-3 Remoting - Starting remoting
+ INFO sparkDriverActorSystem-akka.actor.default-dispatcher-3 Remoting - Remoting started; listening on addresses :[akka.tcp://sparkDriverActorSystem@172.16.1.153:58369]
+ INFO main org.apache.spark.util.Utils - Successfully started service 'sparkDriverActorSystem' on port 58369.
+ INFO main org.apache.spark.SparkEnv - Registering MapOutputTracker
+ INFO main org.apache.spark.SparkEnv - Registering BlockManagerMaster
+ INFO main org.apache.spark.storage.DiskBlockManager - Created local directory at C:\Users\Administrator\AppData\Local\Temp\blockmgr-6239b2c8-09da-4d37-8401-d9076bbcbb3a
+ INFO main org.apache.spark.storage.MemoryStore - MemoryStore started with capacity 415.1 MB
+ INFO main org.apache.spark.SparkEnv - Registering OutputCommitCoordinator
+ INFO main org.spark-project.jetty.server.Server - jetty-8.y.z-SNAPSHOT
+ INFO main org.spark-project.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:4040
+ INFO main org.apache.spark.util.Utils - Successfully started service 'SparkUI' on port 4040.
+ INFO main org.apache.spark.ui.SparkUI - Started SparkUI at http://172.16.1.153:4040
+ INFO main org.apache.spark.executor.Executor - Starting executor ID driver on host localhost
+ INFO main org.apache.spark.util.Utils - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 58376.
+ INFO main org.apache.spark.network.netty.NettyBlockTransferService - Server created on 58376
+ INFO main org.apache.spark.storage.BlockManagerMaster - Trying to register BlockManager
+ INFO dispatcher-event-loop-2 org.apache.spark.storage.BlockManagerMasterEndpoint - Registering block manager localhost:58376 with 415.1 MB RAM, BlockManagerId(driver, localhost, 58376)
+ INFO main org.apache.spark.storage.BlockManagerMaster - Registered BlockManager
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/metrics/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage/kill,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/api,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/static,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/threadDump/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/threadDump,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/environment/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/environment,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/rdd/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/rdd,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/pool/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/pool,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/job/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/job,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs,null}
+ INFO main org.apache.spark.ui.SparkUI - Stopped Spark web UI at http://172.16.1.153:4040
+ INFO dispatcher-event-loop-2 org.apache.spark.MapOutputTrackerMasterEndpoint - MapOutputTrackerMasterEndpoint stopped!
+ INFO main org.apache.spark.storage.MemoryStore - MemoryStore cleared
+ INFO main org.apache.spark.storage.BlockManager - BlockManager stopped
+ INFO main org.apache.spark.storage.BlockManagerMaster - BlockManagerMaster stopped
+ INFO dispatcher-event-loop-3 org.apache.spark.scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint - OutputCommitCoordinator stopped!
+ INFO main org.apache.spark.SparkContext - Successfully stopped SparkContext
+ INFO sparkDriverActorSystem-akka.actor.default-dispatcher-3 akka.remote.RemoteActorRefProvider$RemotingTerminator - Shutting down remote daemon.
+ INFO Thread-3 org.apache.spark.util.ShutdownHookManager - Shutdown hook called
+ INFO Thread-3 org.apache.spark.util.ShutdownHookManager - Deleting directory C:\Users\Administrator\AppData\Local\Temp\spark-e2c3dd7d-36db-4bf4-9cd5-bf43f6885a63
+ INFO sparkDriverActorSystem-akka.actor.default-dispatcher-3 akka.remote.RemoteActorRefProvider$RemotingTerminator - Remote daemon shut down; proceeding with flushing remote transports.
+ INFO main org.apache.spark.SparkContext - Running Spark version 1.6.2
+ WARN main org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+ INFO main org.apache.spark.SecurityManager - Changing view acls to: Administrator
+ INFO main org.apache.spark.SecurityManager - Changing modify acls to: Administrator
+ INFO main org.apache.spark.SecurityManager - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(Administrator); users with modify permissions: Set(Administrator)
+ INFO main org.apache.spark.util.Utils - Successfully started service 'sparkDriver' on port 58451.
+ INFO sparkDriverActorSystem-akka.actor.default-dispatcher-2 akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+ INFO sparkDriverActorSystem-akka.actor.default-dispatcher-2 Remoting - Starting remoting
+ INFO sparkDriverActorSystem-akka.actor.default-dispatcher-2 Remoting - Remoting started; listening on addresses :[akka.tcp://sparkDriverActorSystem@172.16.1.153:58464]
+ INFO main org.apache.spark.util.Utils - Successfully started service 'sparkDriverActorSystem' on port 58464.
+ INFO main org.apache.spark.SparkEnv - Registering MapOutputTracker
+ INFO main org.apache.spark.SparkEnv - Registering BlockManagerMaster
+ INFO main org.apache.spark.storage.DiskBlockManager - Created local directory at C:\Users\Administrator\AppData\Local\Temp\blockmgr-7bfd1287-ceda-426c-a368-882479316a67
+ INFO main org.apache.spark.storage.MemoryStore - MemoryStore started with capacity 415.1 MB
+ INFO main org.apache.spark.SparkEnv - Registering OutputCommitCoordinator
+ INFO main org.spark-project.jetty.server.Server - jetty-8.y.z-SNAPSHOT
+ INFO main org.spark-project.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:4040
+ INFO main org.apache.spark.util.Utils - Successfully started service 'SparkUI' on port 4040.
+ INFO main org.apache.spark.ui.SparkUI - Started SparkUI at http://172.16.1.153:4040
+ INFO main org.apache.spark.executor.Executor - Starting executor ID driver on host localhost
+ INFO main org.apache.spark.util.Utils - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 58471.
+ INFO main org.apache.spark.network.netty.NettyBlockTransferService - Server created on 58471
+ INFO main org.apache.spark.storage.BlockManagerMaster - Trying to register BlockManager
+ INFO dispatcher-event-loop-3 org.apache.spark.storage.BlockManagerMasterEndpoint - Registering block manager localhost:58471 with 415.1 MB RAM, BlockManagerId(driver, localhost, 58471)
+ INFO main org.apache.spark.storage.BlockManagerMaster - Registered BlockManager
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/metrics/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage/kill,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/api,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/static,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/threadDump/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/threadDump,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/environment/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/environment,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/rdd/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/rdd,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/pool/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/pool,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/job/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/job,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/json,null}
+ INFO main org.spark-project.jetty.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs,null}
+ INFO main org.apache.spark.ui.SparkUI - Stopped Spark web UI at http://172.16.1.153:4040
+ INFO dispatcher-event-loop-3 org.apache.spark.MapOutputTrackerMasterEndpoint - MapOutputTrackerMasterEndpoint stopped!
+ INFO main org.apache.spark.storage.MemoryStore - MemoryStore cleared
+ INFO main org.apache.spark.storage.BlockManager - BlockManager stopped
+ INFO main org.apache.spark.storage.BlockManagerMaster - BlockManagerMaster stopped
+ INFO dispatcher-event-loop-2 org.apache.spark.scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint - OutputCommitCoordinator stopped!
+ INFO main org.apache.spark.SparkContext - Successfully stopped SparkContext
+ INFO Thread-3 org.apache.spark.util.ShutdownHookManager - Shutdown hook called
+ INFO sparkDriverActorSystem-akka.actor.default-dispatcher-5 akka.remote.RemoteActorRefProvider$RemotingTerminator - Shutting down remote daemon.
+ INFO Thread-3 org.apache.spark.util.ShutdownHookManager - Deleting directory C:\Users\Administrator\AppData\Local\Temp\spark-aedcd413-5ac0-4b9f-b395-108a375e23a8
+ WARN main org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+ ERROR main org.apache.hadoop.util.Shell - Failed to locate the winutils binary in the hadoop binary path
+ java.io.IOException: Could not locate executable null\bin\winutils.exe in the Hadoop binaries.
+	at org.apache.hadoop.util.Shell.getQualifiedBinPath(Shell.java:278)
+	at org.apache.hadoop.util.Shell.getWinUtilsPath(Shell.java:300)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:293)
+	at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:76)
+	at org.apache.hadoop.mapred.FileInputFormat.setInputPaths(FileInputFormat.java:362)
+	at org.apache.spark.SparkContext$$anonfun$hadoopFile$1$$anonfun$33.apply(SparkContext.scala:1015)
+	at org.apache.spark.SparkContext$$anonfun$hadoopFile$1$$anonfun$33.apply(SparkContext.scala:1015)
+	at org.apache.spark.rdd.HadoopRDD$$anonfun$getJobConf$6.apply(HadoopRDD.scala:176)
+	at org.apache.spark.rdd.HadoopRDD$$anonfun$getJobConf$6.apply(HadoopRDD.scala:176)
+	at scala.Option.map(Option.scala:145)
+	at org.apache.spark.rdd.HadoopRDD.getJobConf(HadoopRDD.scala:176)
+	at org.apache.spark.rdd.HadoopRDD.getPartitions(HadoopRDD.scala:195)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+	at scala.Option.getOrElse(Option.scala:120)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:35)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+	at scala.Option.getOrElse(Option.scala:120)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:35)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+	at scala.Option.getOrElse(Option.scala:120)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:35)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+	at scala.Option.getOrElse(Option.scala:120)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+	at org.apache.spark.Partitioner$.defaultPartitioner(Partitioner.scala:65)
+	at org.apache.spark.rdd.PairRDDFunctions$$anonfun$reduceByKey$3.apply(PairRDDFunctions.scala:331)
+	at org.apache.spark.rdd.PairRDDFunctions$$anonfun$reduceByKey$3.apply(PairRDDFunctions.scala:331)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:150)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:111)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:316)
+	at org.apache.spark.rdd.PairRDDFunctions.reduceByKey(PairRDDFunctions.scala:330)
+	at HostParse4File$.functionToCreateContext(HostParse4File.scala:16)
+	at HostParse4File$.main(HostParse4File.scala:44)
+	at HostParse4File.main(HostParse4File.scala)
+WARN main  - Your hostname, amd-PC resolves to a loopback/non-reachable address: fe80:0:0:0:e0:0:0:0%13, but we couldn't find any external IP address!
+ WARN main org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+ ERROR main org.apache.hadoop.util.Shell - Failed to locate the winutils binary in the hadoop binary path
+ java.io.IOException: Could not locate executable null\bin\winutils.exe in the Hadoop binaries.
+	at org.apache.hadoop.util.Shell.getQualifiedBinPath(Shell.java:278)
+	at org.apache.hadoop.util.Shell.getWinUtilsPath(Shell.java:300)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:293)
+	at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:76)
+	at org.apache.hadoop.mapred.FileInputFormat.setInputPaths(FileInputFormat.java:362)
+	at org.apache.spark.SparkContext$$anonfun$hadoopFile$1$$anonfun$33.apply(SparkContext.scala:1015)
+	at org.apache.spark.SparkContext$$anonfun$hadoopFile$1$$anonfun$33.apply(SparkContext.scala:1015)
+	at org.apache.spark.rdd.HadoopRDD$$anonfun$getJobConf$6.apply(HadoopRDD.scala:176)
+	at org.apache.spark.rdd.HadoopRDD$$anonfun$getJobConf$6.apply(HadoopRDD.scala:176)
+	at scala.Option.map(Option.scala:145)
+	at org.apache.spark.rdd.HadoopRDD.getJobConf(HadoopRDD.scala:176)
+	at org.apache.spark.rdd.HadoopRDD.getPartitions(HadoopRDD.scala:195)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+	at scala.Option.getOrElse(Option.scala:120)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:35)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+	at scala.Option.getOrElse(Option.scala:120)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:35)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+	at scala.Option.getOrElse(Option.scala:120)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:35)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+	at scala.Option.getOrElse(Option.scala:120)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+	at org.apache.spark.Partitioner$.defaultPartitioner(Partitioner.scala:65)
+	at org.apache.spark.rdd.PairRDDFunctions$$anonfun$reduceByKey$3.apply(PairRDDFunctions.scala:331)
+	at org.apache.spark.rdd.PairRDDFunctions$$anonfun$reduceByKey$3.apply(PairRDDFunctions.scala:331)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:150)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:111)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:316)
+	at org.apache.spark.rdd.PairRDDFunctions.reduceByKey(PairRDDFunctions.scala:330)
+	at HostParse4File$.functionToCreateContext(HostParse4File.scala:16)
+	at HostParse4File$.main(HostParse4File.scala:44)
+	at HostParse4File.main(HostParse4File.scala)
+WARN main  - Your hostname, amd-PC resolves to a loopback/non-reachable address: fe80:0:0:0:e0:0:0:0%13, but we couldn't find any external IP address!
+ WARN main org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+ ERROR main org.apache.hadoop.util.Shell - Failed to locate the winutils binary in the hadoop binary path
+ java.io.IOException: Could not locate executable null\bin\winutils.exe in the Hadoop binaries.
+	at org.apache.hadoop.util.Shell.getQualifiedBinPath(Shell.java:278)
+	at org.apache.hadoop.util.Shell.getWinUtilsPath(Shell.java:300)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:293)
+	at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:76)
+	at org.apache.hadoop.mapred.FileInputFormat.setInputPaths(FileInputFormat.java:362)
+	at org.apache.spark.SparkContext$$anonfun$hadoopFile$1$$anonfun$33.apply(SparkContext.scala:1015)
+	at org.apache.spark.SparkContext$$anonfun$hadoopFile$1$$anonfun$33.apply(SparkContext.scala:1015)
+	at org.apache.spark.rdd.HadoopRDD$$anonfun$getJobConf$6.apply(HadoopRDD.scala:176)
+	at org.apache.spark.rdd.HadoopRDD$$anonfun$getJobConf$6.apply(HadoopRDD.scala:176)
+	at scala.Option.map(Option.scala:145)
+	at org.apache.spark.rdd.HadoopRDD.getJobConf(HadoopRDD.scala:176)
+	at org.apache.spark.rdd.HadoopRDD.getPartitions(HadoopRDD.scala:195)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+	at scala.Option.getOrElse(Option.scala:120)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:35)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+	at scala.Option.getOrElse(Option.scala:120)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:35)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+	at scala.Option.getOrElse(Option.scala:120)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:35)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+	at scala.Option.getOrElse(Option.scala:120)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+	at org.apache.spark.Partitioner$.defaultPartitioner(Partitioner.scala:65)
+	at org.apache.spark.rdd.PairRDDFunctions$$anonfun$reduceByKey$3.apply(PairRDDFunctions.scala:331)
+	at org.apache.spark.rdd.PairRDDFunctions$$anonfun$reduceByKey$3.apply(PairRDDFunctions.scala:331)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:150)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:111)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:316)
+	at org.apache.spark.rdd.PairRDDFunctions.reduceByKey(PairRDDFunctions.scala:330)
+	at HostParse4File$.functionToCreateContext(HostParse4File.scala:16)
+	at HostParse4File$.main(HostParse4File.scala:43)
+	at HostParse4File.main(HostParse4File.scala)
+WARN main  - Your hostname, amd-PC resolves to a loopback/non-reachable address: fe80:0:0:0:e0:0:0:0%13, but we couldn't find any external IP address!
+ WARN main org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+ ERROR main org.apache.hadoop.util.Shell - Failed to locate the winutils binary in the hadoop binary path
+ java.io.IOException: Could not locate executable null\bin\winutils.exe in the Hadoop binaries.
+	at org.apache.hadoop.util.Shell.getQualifiedBinPath(Shell.java:278)
+	at org.apache.hadoop.util.Shell.getWinUtilsPath(Shell.java:300)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:293)
+	at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:76)
+	at org.apache.hadoop.mapred.FileInputFormat.setInputPaths(FileInputFormat.java:362)
+	at org.apache.spark.SparkContext$$anonfun$hadoopFile$1$$anonfun$33.apply(SparkContext.scala:1015)
+	at org.apache.spark.SparkContext$$anonfun$hadoopFile$1$$anonfun$33.apply(SparkContext.scala:1015)
+	at org.apache.spark.rdd.HadoopRDD$$anonfun$getJobConf$6.apply(HadoopRDD.scala:176)
+	at org.apache.spark.rdd.HadoopRDD$$anonfun$getJobConf$6.apply(HadoopRDD.scala:176)
+	at scala.Option.map(Option.scala:145)
+	at org.apache.spark.rdd.HadoopRDD.getJobConf(HadoopRDD.scala:176)
+	at org.apache.spark.rdd.HadoopRDD.getPartitions(HadoopRDD.scala:195)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+	at scala.Option.getOrElse(Option.scala:120)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:35)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+	at scala.Option.getOrElse(Option.scala:120)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:35)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+	at scala.Option.getOrElse(Option.scala:120)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:35)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+	at scala.Option.getOrElse(Option.scala:120)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+	at org.apache.spark.Partitioner$.defaultPartitioner(Partitioner.scala:65)
+	at org.apache.spark.rdd.PairRDDFunctions$$anonfun$reduceByKey$3.apply(PairRDDFunctions.scala:331)
+	at org.apache.spark.rdd.PairRDDFunctions$$anonfun$reduceByKey$3.apply(PairRDDFunctions.scala:331)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:150)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:111)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:316)
+	at org.apache.spark.rdd.PairRDDFunctions.reduceByKey(PairRDDFunctions.scala:330)
+	at HostParse4File$.functionToCreateContext(HostParse4File.scala:16)
+	at HostParse4File$.main(HostParse4File.scala:43)
+	at HostParse4File.main(HostParse4File.scala)
+WARN main  - Your hostname, amd-PC resolves to a loopback/non-reachable address: fe80:0:0:0:e0:0:0:0%13, but we couldn't find any external IP address!
+ WARN main org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+ ERROR main org.apache.hadoop.util.Shell - Failed to locate the winutils binary in the hadoop binary path
+ java.io.IOException: Could not locate executable null\bin\winutils.exe in the Hadoop binaries.
+	at org.apache.hadoop.util.Shell.getQualifiedBinPath(Shell.java:278)
+	at org.apache.hadoop.util.Shell.getWinUtilsPath(Shell.java:300)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:293)
+	at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:76)
+	at org.apache.hadoop.mapred.FileInputFormat.setInputPaths(FileInputFormat.java:362)
+	at org.apache.spark.SparkContext$$anonfun$hadoopFile$1$$anonfun$33.apply(SparkContext.scala:1015)
+	at org.apache.spark.SparkContext$$anonfun$hadoopFile$1$$anonfun$33.apply(SparkContext.scala:1015)
+	at org.apache.spark.rdd.HadoopRDD$$anonfun$getJobConf$6.apply(HadoopRDD.scala:176)
+	at org.apache.spark.rdd.HadoopRDD$$anonfun$getJobConf$6.apply(HadoopRDD.scala:176)
+	at scala.Option.map(Option.scala:145)
+	at org.apache.spark.rdd.HadoopRDD.getJobConf(HadoopRDD.scala:176)
+	at org.apache.spark.rdd.HadoopRDD.getPartitions(HadoopRDD.scala:195)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+	at scala.Option.getOrElse(Option.scala:120)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:35)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+	at scala.Option.getOrElse(Option.scala:120)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:35)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+	at scala.Option.getOrElse(Option.scala:120)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:35)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+	at scala.Option.getOrElse(Option.scala:120)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+	at org.apache.spark.Partitioner$.defaultPartitioner(Partitioner.scala:65)
+	at org.apache.spark.rdd.PairRDDFunctions$$anonfun$reduceByKey$3.apply(PairRDDFunctions.scala:331)
+	at org.apache.spark.rdd.PairRDDFunctions$$anonfun$reduceByKey$3.apply(PairRDDFunctions.scala:331)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:150)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:111)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:316)
+	at org.apache.spark.rdd.PairRDDFunctions.reduceByKey(PairRDDFunctions.scala:330)
+	at HostParse4File$.functionToCreateContext(HostParse4File.scala:19)
+	at HostParse4File$.main(HostParse4File.scala:49)
+	at HostParse4File.main(HostParse4File.scala)
+WARN main  - Your hostname, amd-PC resolves to a loopback/non-reachable address: fe80:0:0:0:e0:0:0:0%13, but we couldn't find any external IP address!
+ ERROR Executor task launch worker-0 org.apache.spark.executor.Executor - Exception in task 0.0 in stage 3.0 (TID 2)
+ java.lang.NullPointerException
+	at HostParse4File$$anonfun$functionToCreateContext$2.apply(HostParse4File.scala:25)
+	at HostParse4File$$anonfun$functionToCreateContext$2.apply(HostParse4File.scala:22)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at org.apache.spark.util.CompletionIterator.foreach(CompletionIterator.scala:26)
+	at org.apache.spark.rdd.RDD$$anonfun$foreach$1$$anonfun$apply$32.apply(RDD.scala:912)
+	at org.apache.spark.rdd.RDD$$anonfun$foreach$1$$anonfun$apply$32.apply(RDD.scala:912)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:227)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+WARN task-result-getter-2 org.apache.spark.scheduler.TaskSetManager - Lost task 0.0 in stage 3.0 (TID 2, localhost): java.lang.NullPointerException
+	at HostParse4File$$anonfun$functionToCreateContext$2.apply(HostParse4File.scala:25)
+	at HostParse4File$$anonfun$functionToCreateContext$2.apply(HostParse4File.scala:22)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at org.apache.spark.util.CompletionIterator.foreach(CompletionIterator.scala:26)
+	at org.apache.spark.rdd.RDD$$anonfun$foreach$1$$anonfun$apply$32.apply(RDD.scala:912)
+	at org.apache.spark.rdd.RDD$$anonfun$foreach$1$$anonfun$apply$32.apply(RDD.scala:912)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.SparkContext$$anonfun$runJob$5.apply(SparkContext.scala:1858)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:227)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+ ERROR task-result-getter-2 org.apache.spark.scheduler.TaskSetManager - Task 0 in stage 3.0 failed 1 times; aborting job
+ WARN main org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+ ERROR main org.apache.hadoop.util.Shell - Failed to locate the winutils binary in the hadoop binary path
+ java.io.IOException: Could not locate executable null\bin\winutils.exe in the Hadoop binaries.
+	at org.apache.hadoop.util.Shell.getQualifiedBinPath(Shell.java:278)
+	at org.apache.hadoop.util.Shell.getWinUtilsPath(Shell.java:300)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:293)
+	at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:76)
+	at org.apache.hadoop.mapred.FileInputFormat.setInputPaths(FileInputFormat.java:362)
+	at org.apache.spark.SparkContext$$anonfun$hadoopFile$1$$anonfun$33.apply(SparkContext.scala:1015)
+	at org.apache.spark.SparkContext$$anonfun$hadoopFile$1$$anonfun$33.apply(SparkContext.scala:1015)
+	at org.apache.spark.rdd.HadoopRDD$$anonfun$getJobConf$6.apply(HadoopRDD.scala:176)
+	at org.apache.spark.rdd.HadoopRDD$$anonfun$getJobConf$6.apply(HadoopRDD.scala:176)
+	at scala.Option.map(Option.scala:145)
+	at org.apache.spark.rdd.HadoopRDD.getJobConf(HadoopRDD.scala:176)
+	at org.apache.spark.rdd.HadoopRDD.getPartitions(HadoopRDD.scala:195)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+	at scala.Option.getOrElse(Option.scala:120)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:35)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+	at scala.Option.getOrElse(Option.scala:120)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:35)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+	at scala.Option.getOrElse(Option.scala:120)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:35)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+	at scala.Option.getOrElse(Option.scala:120)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+	at org.apache.spark.Partitioner$.defaultPartitioner(Partitioner.scala:65)
+	at org.apache.spark.rdd.PairRDDFunctions$$anonfun$reduceByKey$3.apply(PairRDDFunctions.scala:331)
+	at org.apache.spark.rdd.PairRDDFunctions$$anonfun$reduceByKey$3.apply(PairRDDFunctions.scala:331)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:150)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:111)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:316)
+	at org.apache.spark.rdd.PairRDDFunctions.reduceByKey(PairRDDFunctions.scala:330)
+	at HostParse4File$.functionToCreateContext(HostParse4File.scala:19)
+	at HostParse4File$.main(HostParse4File.scala:49)
+	at HostParse4File.main(HostParse4File.scala)
+WARN main  - Your hostname, amd-PC resolves to a loopback/non-reachable address: fe80:0:0:0:e0:0:0:0%13, but we couldn't find any external IP address!
+ WARN Thread-3 org.spark-project.jetty.util.thread.QueuedThreadPool - 6 threads could not be stopped
+ WARN main org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+ ERROR main org.apache.hadoop.util.Shell - Failed to locate the winutils binary in the hadoop binary path
+ java.io.IOException: Could not locate executable null\bin\winutils.exe in the Hadoop binaries.
+	at org.apache.hadoop.util.Shell.getQualifiedBinPath(Shell.java:278)
+	at org.apache.hadoop.util.Shell.getWinUtilsPath(Shell.java:300)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:293)
+	at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:76)
+	at org.apache.hadoop.mapred.FileInputFormat.setInputPaths(FileInputFormat.java:362)
+	at org.apache.spark.SparkContext$$anonfun$hadoopFile$1$$anonfun$33.apply(SparkContext.scala:1015)
+	at org.apache.spark.SparkContext$$anonfun$hadoopFile$1$$anonfun$33.apply(SparkContext.scala:1015)
+	at org.apache.spark.rdd.HadoopRDD$$anonfun$getJobConf$6.apply(HadoopRDD.scala:176)
+	at org.apache.spark.rdd.HadoopRDD$$anonfun$getJobConf$6.apply(HadoopRDD.scala:176)
+	at scala.Option.map(Option.scala:145)
+	at org.apache.spark.rdd.HadoopRDD.getJobConf(HadoopRDD.scala:176)
+	at org.apache.spark.rdd.HadoopRDD.getPartitions(HadoopRDD.scala:195)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+	at scala.Option.getOrElse(Option.scala:120)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:35)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+	at scala.Option.getOrElse(Option.scala:120)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:35)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+	at scala.Option.getOrElse(Option.scala:120)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:35)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+	at scala.Option.getOrElse(Option.scala:120)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+	at org.apache.spark.Partitioner$.defaultPartitioner(Partitioner.scala:65)
+	at org.apache.spark.rdd.PairRDDFunctions$$anonfun$reduceByKey$3.apply(PairRDDFunctions.scala:331)
+	at org.apache.spark.rdd.PairRDDFunctions$$anonfun$reduceByKey$3.apply(PairRDDFunctions.scala:331)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:150)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:111)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:316)
+	at org.apache.spark.rdd.PairRDDFunctions.reduceByKey(PairRDDFunctions.scala:330)
+	at HostParse4File$.functionToCreateContext(HostParse4File.scala:19)
+	at HostParse4File$.main(HostParse4File.scala:51)
+	at HostParse4File.main(HostParse4File.scala)
+WARN main  - Your hostname, amd-PC resolves to a loopback/non-reachable address: fe80:0:0:0:e0:0:0:0%13, but we couldn't find any external IP address!
+ WARN main org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+ ERROR main org.apache.hadoop.util.Shell - Failed to locate the winutils binary in the hadoop binary path
+ java.io.IOException: Could not locate executable null\bin\winutils.exe in the Hadoop binaries.
+	at org.apache.hadoop.util.Shell.getQualifiedBinPath(Shell.java:278)
+	at org.apache.hadoop.util.Shell.getWinUtilsPath(Shell.java:300)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:293)
+	at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:76)
+	at org.apache.hadoop.mapred.FileInputFormat.setInputPaths(FileInputFormat.java:362)
+	at org.apache.spark.SparkContext$$anonfun$hadoopFile$1$$anonfun$33.apply(SparkContext.scala:1015)
+	at org.apache.spark.SparkContext$$anonfun$hadoopFile$1$$anonfun$33.apply(SparkContext.scala:1015)
+	at org.apache.spark.rdd.HadoopRDD$$anonfun$getJobConf$6.apply(HadoopRDD.scala:176)
+	at org.apache.spark.rdd.HadoopRDD$$anonfun$getJobConf$6.apply(HadoopRDD.scala:176)
+	at scala.Option.map(Option.scala:145)
+	at org.apache.spark.rdd.HadoopRDD.getJobConf(HadoopRDD.scala:176)
+	at org.apache.spark.rdd.HadoopRDD.getPartitions(HadoopRDD.scala:195)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+	at scala.Option.getOrElse(Option.scala:120)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:35)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+	at scala.Option.getOrElse(Option.scala:120)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:35)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+	at scala.Option.getOrElse(Option.scala:120)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:35)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+	at scala.Option.getOrElse(Option.scala:120)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+	at org.apache.spark.Partitioner$.defaultPartitioner(Partitioner.scala:65)
+	at org.apache.spark.rdd.PairRDDFunctions$$anonfun$reduceByKey$3.apply(PairRDDFunctions.scala:331)
+	at org.apache.spark.rdd.PairRDDFunctions$$anonfun$reduceByKey$3.apply(PairRDDFunctions.scala:331)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:150)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:111)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:316)
+	at org.apache.spark.rdd.PairRDDFunctions.reduceByKey(PairRDDFunctions.scala:330)
+	at HostParse4File$.functionToCreateContext(HostParse4File.scala:19)
+	at HostParse4File$.main(HostParse4File.scala:51)
+	at HostParse4File.main(HostParse4File.scala)
+WARN main  - Your hostname, amd-PC resolves to a loopback/non-reachable address: fe80:0:0:0:e0:0:0:0%13, but we couldn't find any external IP address!
+ WARN main org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+ ERROR main org.apache.hadoop.util.Shell - Failed to locate the winutils binary in the hadoop binary path
+ java.io.IOException: Could not locate executable null\bin\winutils.exe in the Hadoop binaries.
+	at org.apache.hadoop.util.Shell.getQualifiedBinPath(Shell.java:278)
+	at org.apache.hadoop.util.Shell.getWinUtilsPath(Shell.java:300)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:293)
+	at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:76)
+	at org.apache.hadoop.mapred.FileInputFormat.setInputPaths(FileInputFormat.java:362)
+	at org.apache.spark.SparkContext$$anonfun$hadoopFile$1$$anonfun$33.apply(SparkContext.scala:1015)
+	at org.apache.spark.SparkContext$$anonfun$hadoopFile$1$$anonfun$33.apply(SparkContext.scala:1015)
+	at org.apache.spark.rdd.HadoopRDD$$anonfun$getJobConf$6.apply(HadoopRDD.scala:176)
+	at org.apache.spark.rdd.HadoopRDD$$anonfun$getJobConf$6.apply(HadoopRDD.scala:176)
+	at scala.Option.map(Option.scala:145)
+	at org.apache.spark.rdd.HadoopRDD.getJobConf(HadoopRDD.scala:176)
+	at org.apache.spark.rdd.HadoopRDD.getPartitions(HadoopRDD.scala:195)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+	at scala.Option.getOrElse(Option.scala:120)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:35)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+	at scala.Option.getOrElse(Option.scala:120)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:35)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+	at scala.Option.getOrElse(Option.scala:120)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:35)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:239)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:237)
+	at scala.Option.getOrElse(Option.scala:120)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:237)
+	at org.apache.spark.Partitioner$.defaultPartitioner(Partitioner.scala:65)
+	at org.apache.spark.rdd.PairRDDFunctions$$anonfun$reduceByKey$3.apply(PairRDDFunctions.scala:331)
+	at org.apache.spark.rdd.PairRDDFunctions$$anonfun$reduceByKey$3.apply(PairRDDFunctions.scala:331)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:150)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:111)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:316)
+	at org.apache.spark.rdd.PairRDDFunctions.reduceByKey(PairRDDFunctions.scala:330)
+	at HostParse4File$.functionToCreateContext(HostParse4File.scala:19)
+	at HostParse4File$.main(HostParse4File.scala:51)
+	at HostParse4File.main(HostParse4File.scala)
+WARN main  - Your hostname, amd-PC resolves to a loopback/non-reachable address: fe80:0:0:0:e0:0:0:0%13, but we couldn't find any external IP address!
+ 
