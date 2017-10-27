@@ -1,4 +1,8 @@
-DataFilter
-SparkStreamingKafka
+.idea
+lib
+out
+t
+target
+
 *.class
 *.jar
